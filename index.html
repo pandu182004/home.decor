@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title> home.decor</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">home.decor</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__search" id="nav-search">
+        <input type="text" placeholder="Search" />
+        <span><i class="ri-search-2-line"></i></span>
+      </div>
+    </nav>
+    <header class="section__container header__container" id="home">
+        <div class="header__img">
+            <img src="assests/header/header.jpg" alt="header"/>
+        </div>
+        <div class="header__content">
+          <h1><b><i> We design for the way you live</i> </b></h1>
+          <p> Interior design is more than just aesthetics .It’s the art of transforming spaces into experiences. From color palettes to textures, every detail is curated to reflect personality, enhance functionality, and inspire comfort. It’s where creativity meets lifestyle, turning everyday rooms into timeless expressions of style.</p>
+        
+        </div>
+    </header>
+    <section class="section__container deals__container">
+    <div class="deals__card">
+      <h2 class="section__header"> Trendy Deals Of The day</h2>
+      <p>
+      Online shopping for retail sales direct to consumers
+      </p>
+    </div>
+    <div class="deals__card">
+      <span><i class="=ri-cash-line"></i></span>
+      <h4><b>10% cashback</b></h4>
+      <p>Earn a 10% cashback reward on every purchase</p>
+    </div>
+    <div class="deals__card">
+      <span><i class="=ri-vocher-line"></i></span>
+      <h4><b>Free Vochers </b></h4>
+      <p>Earn Free Vochers worth Rs.1000 on every purchase above Rs.2500 shopping</p>
+    </div>
+    </section>
+    <section class="section__container about__container"id="about">
+      <div class="about__header">
+        <div>
+        <h2 class="section__header"><b>About us</b></h2>
+        <b>💎 Luxury Style</b>
+        <p class="section__description">
+         
+Where elegance meets intention.
+We craft refined, timeless interiors that exude sophistication and comfort — designed for those who appreciate the finer things in life.
+</p>
+        </div>
+        <button class="about__btn">Learn More</button>
+      </div>
+      <div class="about__content">
+        <div class="about__card">
+        <div class="about__img">
+          <img src="assests/about.png" alt="about">
+        </div>
+          <h3>1.</h3>
+          <h4><b>How do we help</b></h4>
+          <p>
+            Use our multimedia lectures,videos and coaching sessions.
+          </p>
+        </div>
+        <div class="about__card">
+          <h3>2.</h3>
+          <h4><b>What do we do</b></h4>
+          <p>
+            We offer you a free course that can guide you through the process.
+          </p>
+      </div>
+    </section>
+    
+    <section class="section__container product__container" id="product">
+      <h2 class="section__header">Products</h2>
+      <div class="product__grid">
+        <div class="product__card">
+          <h4>Description </h4>
+          <p>Living Room
+            Flooring: Italian marble, engineered wood, or high-end tiles.
+            
+            Wall finishes: Veneer paneling, decorative wallpapers, textured paints.
+            
+            Ceilings: POP with cove lighting, wooden rafters, or stretch ceilings.
+            
+            Furniture: Solid wood, leather, velvet, or suede upholstery.
+            
+            Decor: Brass/metal inlays, glass partitions, designer lighting.
+            
+            </p>
+            <h5>Model living room - 1</h5>
+           <p>Price per sq.feet:<b>$100</b></p>
+          <img src="assests/living room/ml-1.jpg" alt="product" />
+          <button  id="cartbtn" onclick="addToCart('Product 1', $100)">Add To Cart</button>
+    
+        </div>
+        <div class="product__card">
+          <h4>Model Living room-2</h4>
+          <p>Price per sq.feet:<b>$80</b></p>
+          <img src="assests/living room/ml-2.jpg" alt="product" />
+          <button onclick="addToCart('Product 2', $80)">Add To Cart</button>
+    
+        </div>
+        <div class="product__card">
+          <h4>Description </h4>
+          <p>
+            Kitchen
+Cabinetry: Acrylic, PU finish, or veneer shutters with soft-close hardware.
+
+Countertops: Quartz, granite, or marble.
+
+Backsplash: Glass, ceramic tiles, or natural stone.
+
+Flooring: Anti-skid vitrified tiles or marble.
+
+Accessories: Modular storage systems, pull-outs, and under-cabinet lighting.
+          </p>
+          <h5>Model Kitchen-1</h5>
+          <p>Price per sq.feet:<b>$75.00</b></p>
+          <img src="assests/kitchen/sven-brandsma-3hEGHI4b4gg-unsplash.jpg" alt="product" />
+          <button onclick="addToCart('Product 3', $75)">Add To Cart</button>
+        </div>
+        <div class="product__card">
+          <h4>Model Kitchen-2</h4>
+          <p>Price per sq.feet:<b>$65.00</b></p>
+          <img src="assests/kitchen/k-2.jpg" alt="product" />
+          <button onclick="addToCart('Product 4', $65)">Add To Cart</button>
+        </div>
+        <div class="product__card">
+          <h4>Description</h4>
+          <p>
+            Bedroom
+Wall treatments: Upholstered panels, wood cladding, or premium wallpapers.
+
+Flooring: Wooden flooring or plush carpets.
+
+Wardrobes: Laminated or lacquered finish with glass/metal accents.
+
+False ceiling: POP with warm lighting or recessed lights.
+
+Soft furnishings: Premium curtains, silk or linen bedsheets, and cushions.
+
+
+          </p>
+          <h5>Model Bedroom-1</h5>
+          <p>Price per sq.feet:<b>$55.00</b></p>
+          <img src="assests/bedroom/b-1.jpg"alt="product" />
+          <button onclick="addToCart('Product 5', $55)">Add To Cart</button>
+        </div>
+        <div class="product__card">
+          <h4>Model Bedroom-2</h4>
+          <p>Price per sq.feet:<b>$85.00</b></p>
+          <img src="assests/bedroom/b-2.jpg" alt="product" />
+          <button onclick="addToCart('Product 6', $85)">Add To Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+        </section> 
+    <section class="section__container cart__container" id="cart-section">
+      <h2 class="section__header">Your Cart</h2>
+      <ul id="cart" class="cart__list"></ul>
+    </section>
+
+    <footer class="footer" id="contact">
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">home.decor</a>
+          </div>
+          <p>
+            Join us in transforming your living spaces with furniture that
+            blends elegance and practicality seamlessly.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-pinterest-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul class="footer__links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Payrol</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <ul class="footer__links">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Cancelation Policy</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
